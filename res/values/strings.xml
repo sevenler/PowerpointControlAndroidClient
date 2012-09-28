@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Hold PPT</string>
+    <string name="menu_settings">Setting</string>
+    
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    
+    <string name="alert_connect_failed">connect failed,please check pc and network!</string>
+
+</resources>
