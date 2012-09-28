@@ -5,8 +5,8 @@
     
     <string name="previous">上一张</string>
     <string name="next">下一张</string>
-    <string name="start">开始</string>
-    <string name="stop">停止</string>
+    <string name="start">开始放映</string>
+    <string name="stop">停止放映</string>
     <string name="connect">链接</string>
     <string name="ip_hint">IP地址</string>
     
