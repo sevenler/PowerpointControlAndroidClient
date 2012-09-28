@@ -8,8 +8,9 @@
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="connect">Connect</string>
-    <string name="ip_hint">127.0.0.1</string>
+    <string name="ip_hint">IP Adress</string>
     
     <string name="alert_connect_failed">connect failed,please check pc and network!</string>
-
+	<string name="alert_not_ip_address">It\'s not ip address</string>
+	
 </resources>

@@ -8,8 +8,9 @@
     <string name="start">开始</string>
     <string name="stop">停止</string>
     <string name="connect">链接</string>
-    <string name="ip_hint">127.0.0.1</string>
+    <string name="ip_hint">IP地址</string>
     
     <string name="alert_connect_failed">链接失败，请检查PC端是否开启或者网络是否正常</string>
+    <string name="alert_not_ip_address">输入IP地址错误</string>
 
 </resources>
