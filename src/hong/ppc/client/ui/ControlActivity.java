@@ -5,6 +5,7 @@ import hong.ppc.client.Control;
 import hong.ppc.client.R;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -23,7 +24,10 @@ public class ControlActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.control_activity);
 
-		final Control control = new Control(handler);
+		Intent intent = getIntent();
+		String ip = intent.getStringExtra("ip");
+
+		final Control control = new Control(handler, ip);
 
 		Button start = (Button) findViewById(R.id.start);
 		start.setOnClickListener(new OnClickListener() {
@@ -74,7 +78,9 @@ public class ControlActivity extends Activity {
 				switch (status) {
 				case Client.CONNECT_FAIL:
 					System.out.println("-----------CONNECT_FAIL---------");
-					Toast.makeText(ControlActivity.this, R.string.alert_connect_failed, Toast.LENGTH_SHORT).show();
+					Toast.makeText(ControlActivity.this,
+							R.string.alert_connect_failed, Toast.LENGTH_SHORT)
+							.show();
 					break;
 				case Client.CONNECT_SUCC:
 					System.out.println("-----------CONNECT_SUCC---------");

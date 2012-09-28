@@ -9,10 +9,14 @@ import java.net.UnknownHostException;
 
 public class Client {
 	private int port = 30102;
-	private String ip = "192.168.0.64";
+	private String ip;
 
 	public static final int CONNECT_FAIL = 0;
 	public static final int CONNECT_SUCC = 1;
+	
+	public Client(String ip){
+		this.ip = ip;
+	}
 
 	public void make(int command) throws UnknownHostException, IOException {
 		Socket s = new Socket(ip, port);

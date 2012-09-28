@@ -15,8 +15,8 @@ public class Control extends Client {
 	private BackStateHandler handler; 
 	
 	
-	public Control(BackStateHandler handler) {
-		super();
+	public Control(BackStateHandler handler,String ip) {
+		super(ip);
 		this.handler = handler;
 	}
 
